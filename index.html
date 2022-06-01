@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./estilos/estilo.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -34,7 +35,9 @@
 
 
             
-            <figure>
+            <figure data-aos="fade-right"
+            data-aos-easing="linear"
+            data-aos-duration="1100">
             
                 <img class="logoLaboro" src="./images/noname.png" alt="logo">
   
@@ -42,11 +45,15 @@
   
 
 
-            <h1 class="mainText">Find the best freelancers and talents. </h1>
+            <h1 data-aos="fade-right"
+            data-aos-easing="linear"
+            data-aos-duration="1650" class="mainText">Find the best freelancers and talents. </h1>
 
 
 
-            <div>
+            <div data-aos="fade-right"
+            data-aos-easing="linear"
+            data-aos-duration="1950">
 
                 <form class="searchbar" action="action_page.php">
                 <input type="text" placeholder="Search.." name="search">
@@ -56,13 +63,15 @@
 
 
             <div class="align-one">
-                <div class="mainButtons">
+                <div data-aos="fade-right"
+                data-aos-easing="linear"
+                data-aos-duration="2450" class="mainButtons">
 
                     <nav>
                         <ul>
 
                              <li>
-                             <a class="hiring" href="./page sections/hiring.html">Apply as a freelancer</a>
+                             <a class="hiring" href="./page sections/signup.html">Apply as a freelancer</a>
                              </li>
                              <li>
                              <a class="freelancers" href="./page sections/freelancers.html">Freelancers</a>
@@ -77,7 +86,9 @@
 
 
 
-            <p class="textAreaSearchBar">
+            <p data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1000" class="textAreaSearchBar">
     
                 Start searching categories and find the best freelancer for you.
 
@@ -87,27 +98,39 @@
 
     
         <aside class="sidebar">
-            <h2>Certified workers from all around the globe</h2>
+            <h2 data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500">Certified workers from all around the globe</h2>
 
-            <img class="indexSidebarPng" src="./images/sidebar.index.png.png" alt="briefcase">
+            <img data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="1100"
+            data-aos-offset="0" class="sidebarPng" src="./images/sidebar.index.png.png" alt="briefcase">
 
         </aside>
 
-        <div class="widgets widget-1"> <h3>Find</h3> 
+        <div data-aos="fade-up"
+        data-aos-duration="1400" class="widgets widget-1"> <h3 class="widgetTitles">Find</h3> 
+
+        <h4 class="widgetTexts">All kinds of professionals are enlisted in our community, so you can find them anytime!</h4>
         
             <img class="widgetIcons" src="./images/search.png" alt="search.icon">
 
         </div>
 
 
-        <div class="widgets widget-2"> <h3>Work</h3> 
+        <div data-aos="fade-up"
+        data-aos-duration="1600" class="widgets widget-2"> <h3 class="widgetTitles">Work</h3> 
         
+        <h4 class="widgetTexts">In our community we present to you any job offer posted by our members, apply and find the job of your dreams!</h4>
             <img class="widgetIcons" src="./images/work.png" alt="work.icon">
         
         </div>
 
-        <div class="widgets widget-3"> <h3>Contract</h3> 
+        <div data-aos="fade-up" 
+        data-aos-duration="1800" class="widgets widget-3"> <h3 class="widgetTitles">Contract</h3> 
         
+        <h4 class="widgetTexts">Start looking for anyone you want to hire in our categories. Everyone's listing their capabilities for you to check!</h4>
             <img class="widgetIcons" src="./images/contract.png" alt="contract.icon">
 
         </div>
@@ -141,6 +164,12 @@
 
     </div>
 
+<!-- SCRIPTS ANIMACIONES -->
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
 </body>
 </html>

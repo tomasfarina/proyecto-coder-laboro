@@ -247,7 +247,7 @@ form.searchbar input[type=text] {
 
 }
 
-.indexSidebarPng {
+.sidebarPng {
     display: block;
     width: 40%;
     margin-bottom: 0;
@@ -262,8 +262,8 @@ form.searchbar input[type=text] {
 .contenedor .widget-2,
 .contenedor .widget-3 {
     background: #ffffff98;
-    color: rgb(49, 49, 49);
-    height: 130px;
+    color: rgb(255, 255, 255);
+    height: 320px;
     text-align: center;
     display: flex;
     align-items: center;
@@ -274,16 +274,33 @@ form.searchbar input[type=text] {
     font-weight: 900;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.329);
     transition-duration: 0.7s;
+    
 
 
 }
 
-.widgets:hover {
-    transform: scale(1.05);
-    transition: all 0.7s;
+.contenedor .widget-1 {
+    background: #f56ad9;
+
 }
 
+.contenedor .widget-2 {
+    background: #81f081;
 
+}
+
+.contenedor .widget-3 {
+    background: #cec437;
+
+}
+
+.contenedor .widgetTexts{
+    margin-bottom: 30px;
+}
+
+.contenedor .widgetTitles{
+    font-size: 50px;
+}
 
 .contenedor .widget-1 {
     grid-area: widget-1;
@@ -305,6 +322,8 @@ form.searchbar input[type=text] {
     align-items: center;
     justify-content: center;
 }
+
+
 
 
 
@@ -613,3 +632,5 @@ button:hover {
 
 
 }
+
+
