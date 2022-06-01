@@ -1,0 +1,595 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Ubuntu:wght@300&display=swap');
+
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(189,244,255,1) 39%, rgba(189,244,255,1) 87%);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+}
+
+
+
+/* GRIDS BASE INDEX */
+
+.contenedor {
+    width: 90%;
+    max-width: 1500px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, auto);
+
+    grid-template-areas:"header header header"
+    "contenido contenido contenido"
+    "sidebar sidebar sidebar"
+    "widget-1 widget-2 widget-3"
+    "footer footer footer";
+
+}
+
+/* ÁREA PERSONALIZACIÓN GENERAL */
+
+.contenedor > div,
+.contenedor .sidebar,
+.contenedor .footer,
+.contenedor .contenido {
+    background: white;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(27, 27, 27);
+}
+
+li{
+    display: inline-block;
+    list-style-type: none;
+}
+
+/* ÁREA PERSONALIZACIÓN HEADER */
+
+ .header{
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    position: sticky;
+
+}
+
+
+
+
+.header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+
+.header a.logo {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+  }
+
+.header a.join:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.header-right {
+    float: right;
+}
+
+
+header nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    padding: 30px;
+    margin: 10px;
+    position: sticky;
+}
+
+header nav ul li{
+    display: inline-block;
+    background-color: white
+
+}
+
+
+/* ÁREA PERSONALIZACIÓN CONTENIDO */
+
+.contenedor .contenido{
+    grid-area: contenido;
+    background: none;
+}
+
+.mainText{
+    font-size: 35px;
+    color: rgb(19, 18, 18);
+    font-family: 'Poppins', sans-serif;
+    padding: 15px;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.329);
+}
+
+.textAreaSearchBar{
+    color:rgb(19, 18, 18);
+    padding: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+    font-weight: 900;
+    margin-bottom: 5%;
+    margin-top: 7%;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.329);
+
+
+}
+main nav div ul li a{
+    text-decoration: none;
+}
+
+.logoLaboro{
+    margin-top: 7%;
+    margin-bottom: 7%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 30%;
+}
+
+
+  form.searchbar input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    width: 30%;
+    background: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .freelancers {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 25px;
+    line-height: 25px;
+    border: 1px solid rgb(184, 200, 228);
+    border-radius: 15px;
+    margin: 40px;
+    display: flex;
+}
+
+.hiring{
+    background-color: #ffffff;
+    text-align: center;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 25px;
+    line-height: 25px;
+    border: 1px solid rgb(184, 200, 228);
+    border-radius: 15px;
+    margin: 40px;
+    display: flex;
+}
+
+.freelancers:hover{
+    background-color: rgb(210, 211, 226);
+    color: black;
+}
+
+.hiring:hover{
+    background-color: rgb(210, 211, 226);
+    color: black;
+}
+
+.mainButtons{
+    list-style-type: none;
+    font-size: 27px;
+    color: rgb(24, 23, 23);
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 10%;
+    text-align: center;
+    margin-top: 2%;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.about{
+    font-size: 24px;
+}
+
+
+/* ÁREA PERSONALIZACIÓN SIDEBAR */
+
+
+.contenedor .sidebar{
+    background: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100px;
+    grid-area: sidebar;
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+    font-weight: 900;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.329);
+
+}
+
+.indexSidebarPng{
+    display: block;
+    width: 40%;
+    margin-bottom: 0;
+    align-self: center;
+    margin-top: 5%;
+}
+
+
+/* ÁREA PERSONALIZACIÓN WIDGETS */
+
+.contenedor .widget-1,
+.contenedor .widget-2,
+.contenedor .widget-3 {
+    background: #ffffff98;
+    color: rgb(49, 49, 49);
+    height: 130px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+    font-weight: 900;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.329);
+
+}
+
+.contenedor .widget-1 {
+    grid-area: widget-1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .widget-2 {
+    grid-area: widget-2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .widget-3 {
+    grid-area: widget-3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+/* ÁREA PERSONALIZACIÓN FOOTER */
+
+.contenedor .footer {
+    grid-area: footer;
+    background: none;
+    border-top: gray 1px solid;
+}
+
+footer nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    font-size: 20px;
+    color:  gray;
+    margin: 5%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+    font-weight: 900;
+    border: 1px solid rgb(184, 200, 228);
+    padding: 8px;
+    border-radius: 15px;
+    display: flex;
+    text-align: center;
+    
+}
+
+footer nav ul li:hover{
+  background-color: rgb(210, 211, 226);
+  color: black;
+}
+
+footer{
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footerCompany{
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+.logoFooter{
+    display: block;
+    max-width: 10%;
+    max-height: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-bottom: 0;
+    align-self: center;
+    margin-top: 3%;
+}
+
+/* ÁREA PERSONALIZACIÓN FORMS, SEARCHBARS, CONTENEDORES, ETC */
+
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 6px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    font-size: 16px;
+  }
+  
+  input[type=submit] {
+    background-color: #449dd1;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #3a84af;
+  }
+  
+
+.container {  /* All containers */
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    margin: 7% 35%;
+    box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.199);
+  }
+
+  .formsLabels {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 32px;
+  }
+
+  .textForms {
+    color:rgb(19, 18, 18);
+    padding: 15px;
+    margin-bottom: 0;
+    margin-top: 5%;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.329);
+  }
+
+  /* Searchbar Style */
+
+
+  
+  form.searchbar input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    width: 50%;
+    background: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  
+  /* Join style */
+  
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #449dd1;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 1px solid #449dd1;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+
+  .joinLabels{
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+    font-weight: 900;
+  }
+
+  .remember{
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+    font-weight: 900;
+      align-self: center;
+      margin-bottom: 10%;
+  }
+
+  .logoJoin, .logoRegister {    
+    display: block;
+    max-width: 20%;
+    max-height: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-bottom: 14%;
+    align-self: center;
+    margin-top: 3%;
+}
+
+.register, .sign{
+    text-decoration: underline 1px rgb(155, 155, 155);
+}
+
+.textLogin, .textRegister{
+    color:rgb(19, 18, 18);
+    padding: 15px;
+    margin-bottom: 5%;
+    margin-top: 0;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.329);
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+    font-weight: 900;
+}
+
+
+/* Register style */
+
+.registerLabel{
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+/* MEDIA QUERIES INDEX*/
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .contenedor {
+        grid-template-areas: "header header header"
+                             "contenido contenido contenido"
+                             "sidebar sidebar sidebar"
+                             "widget-1 widget-1 widget-1"
+                             "widget-2 widget-2 widget-2"
+                             "widget-3 widget-3 widget-3"
+                             "footer footer footer";
+
+        font-size: 30px;
+
+        
+    }
+
+
+.widgetIcons{
+    width: 20%;
+}
+
+}
+
+/* Tablet */
+
+@media (min-width: 769px) 
+and (max-width: 1023px) {
+
+    .contenedor {
+        grid-template-areas: "header header header"
+                             "contenido contenido contenido"
+                             "sidebar sidebar sidebar"
+                             "widget-1 widget-2 widget-3"
+                             "footer footer footer";
+
+        font-size: 30px;
+    }
+
+
+
+    .indexSidebarPng{
+        width: 30%;
+    }
+
+
+
+
+.widgetIcons {
+    width: 60%;
+}
+
+
+}
+
+/* pc */
+
+@media screen and (min-width: 1024px)  {
+
+    .contenedor {
+        grid-template-columns: repeat(3, 3fr);
+    
+        grid-template-areas: "header header header"
+                             "contenido contenido sidebar"
+                             "widget-1 widget-2 widget-3"
+                             "footer footer footer";
+
+        font-size: 30px;
+}
+
+
+
+.contenedor .sidebar{
+    width: 100%;
+
+
+}
+
+
+
+.logoLaboro{
+    width: 60%;
+}
+
+.widgetIcons{
+    width: 20%;
+}
+
+
+}
