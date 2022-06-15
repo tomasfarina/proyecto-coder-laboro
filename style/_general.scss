@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Ubuntu:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(189, 244, 255, 1) 39%, rgba(189, 244, 255, 1) 87%);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+}
+
+/* ÁREA PERSONALIZACIÓN GENERAL */
+
+.contenedor>div,
+.contenedor .sidebar,
+.contenedor .footer,
+.contenedor .contenido {
+
+    padding: 20px;
+    border-radius: 4px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(27, 27, 27);
+}
+
+li {
+    display: inline-block;
+    list-style-type: none;
+}
