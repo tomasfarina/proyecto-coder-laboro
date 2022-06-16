@@ -1,15 +1,17 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Ubuntu:wght@300&display=swap");
-@o .contenedor {
-  width: 90%;
-  max-width: 1500px;
-  margin: 20px auto;
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(5, auto);
-  grid-template-areas: "header header header" "contenido contenido contenido" "sidebar sidebar sidebar" "widget-1 widget-2 widget-3" "footer footer footer";
+* {
+  margin: 0;
+  padding: 0;
 }
+
+body {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(189, 244, 255) 39%, rgb(189, 244, 255) 87%);
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+}
+
 /* ÁREA PERSONALIZACIÓN GENERAL */
 .contenedor > div,
 .contenedor .sidebar,
@@ -29,6 +31,18 @@ li {
   list-style-type: none;
 }
 
+/* GRIDS BASE INDEX */
+.contenedor {
+  width: 90%;
+  max-width: 1500px;
+  margin: 20px auto;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas: "header header header" "contenido contenido contenido" "sidebar sidebar sidebar" "widget-1 widget-2 widget-3" "footer footer footer";
+}
+
 /* ÁREA PERSONALIZACIÓN HEADER */
 .header {
   position: fixed;
@@ -37,14 +51,119 @@ li {
   width: 100%;
   box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.05);
 }
-
-.logo {
+.header .logo {
   font-weight: bolder;
   font-size: 25px;
 }
-
-h2 {
+.header .logo h2 {
   font-weight: bolder;
+}
+
+/* ÁREA PERSONALIZACIÓN CONTENIDO */
+.contenedor .contenido {
+  grid-area: contenido;
+  background: none;
+}
+.contenedor .contenido .mainText {
+  font-size: 35px;
+  color: rgb(19, 18, 18);
+  font-family: "Poppins", sans-serif;
+  padding: 15px;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  text-align: center;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.329);
+  font-weight: bold;
+}
+.contenedor .contenido .mainText .textAreaSearchBar {
+  color: rgb(19, 18, 18);
+  padding: 15px;
+  font-family: "Poppins", sans-serif;
+  font-size: 19px;
+  font-weight: 900;
+  margin-bottom: 5%;
+  margin-top: 7%;
+  text-align: center;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.329);
+}
+.contenedor .contenido .mainText .textAreaSearchBar form.searchbar input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  width: 30%;
+  background: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.contenedor .contenido .mainText .textAreaSearchBar form.searchbar input[type=text] form.searchbar input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  background: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.freelancers {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 8px;
+  text-decoration: none;
+  font-size: 25px;
+  line-height: 25px;
+  border: 1px solid rgb(184, 200, 228);
+  border-radius: 15px;
+  margin: 40px;
+  display: flex;
+  transition-duration: 0.4s;
+}
+.freelancers:hover {
+  background-color: rgb(210, 211, 226);
+  color: black;
+}
+
+.hiring {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 8px;
+  text-decoration: none;
+  font-size: 25px;
+  line-height: 25px;
+  border: 1px solid rgb(184, 200, 228);
+  border-radius: 15px;
+  margin: 40px;
+  display: flex;
+  transition-duration: 0.4s;
+}
+.hiring:hover {
+  background-color: rgb(210, 211, 226);
+  color: black;
+}
+
+.logoLaboro {
+  margin-top: 7%;
+  margin-bottom: 7%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 30%;
+}
+
+.mainButtons {
+  list-style-type: none;
+  font-size: 27px;
+  color: rgb(24, 23, 23);
+  font-family: 'Poppins', sans-serif;
+  padding-bottom: 10%;
+  text-align: center;
+  margin-top: 2%;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
 }
 
 /* ÁREA PERSONALIZACIÓN CONTENIDO */
@@ -77,10 +196,6 @@ h2 {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.329);
 }
 
-main nav div ul li a {
-  text-decoration: none;
-}
-
 .logoLaboro {
   margin-top: 7%;
   margin-bottom: 7%;
@@ -99,44 +214,6 @@ form.searchbar input[type=text] {
   margin-left: auto;
   margin-right: auto;
   display: block;
-}
-
-.freelancers {
-  background-color: #ffffff;
-  text-align: center;
-  padding: 8px;
-  text-decoration: none;
-  font-size: 25px;
-  line-height: 25px;
-  border: 1px solid rgb(184, 200, 228);
-  border-radius: 15px;
-  margin: 40px;
-  display: flex;
-  transition-duration: 0.4s;
-}
-
-.hiring {
-  background-color: #ffffff;
-  text-align: center;
-  padding: 8px;
-  text-decoration: none;
-  font-size: 25px;
-  line-height: 25px;
-  border: 1px solid rgb(184, 200, 228);
-  border-radius: 15px;
-  margin: 40px;
-  display: flex;
-  transition-duration: 0.4s;
-}
-
-.freelancers:hover {
-  background-color: rgb(210, 211, 226);
-  color: black;
-}
-
-.hiring:hover {
-  background-color: rgb(210, 211, 226);
-  color: black;
 }
 
 .mainButtons {
