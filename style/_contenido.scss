@@ -1,0 +1,85 @@
+/* ÁREA PERSONALIZACIÓN CONTENIDO */
+
+.contenedor .contenido {
+    grid-area: contenido;
+    background: none;
+    
+    .mainText {
+        font-size: 35px;
+        color: rgb(19, 18, 18);
+        font-family: $font;
+        padding: 15px;
+        margin-top: 5%;
+        margin-bottom: 10%;
+        text-align: center;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.329);
+        font-weight: bold;
+
+        .textAreaSearchBar {
+            color: rgb(19, 18, 18);
+            padding: 15px;
+            font-family: $font;
+            font-size: 19px;
+            font-weight: 900;
+            margin-bottom: 5%;
+            margin-top: 7%;
+            text-align: center;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.329);
+
+                
+                    form.searchbar input[type=text] {
+                        padding: 10px;
+                        font-size: 17px;
+                        border: 1px solid grey;
+                        width: 30%;
+                        background: #ffffff;
+                        margin-left: auto;
+                        margin-right: auto;
+                        display: block;
+
+                            form.searchbar input[type=text] {
+                            padding: 10px;
+                            font-size: 17px;
+                            border: 1px solid grey;
+                            background: #ffffff;
+                            margin-left: auto;
+                            margin-right: auto;
+                            display: block;
+                            }
+                    }
+                }
+            }
+        }
+
+
+.freelancers,
+.hiring {
+            background-color: #ffffff;
+            text-align: center;
+            padding: 8px;
+            text-decoration: none;
+            font-size: 25px;
+            line-height: 25px;
+            border: 1px solid rgb(184, 200, 228);
+            border-radius: 15px;
+            margin: 40px;
+            display: flex;
+            transition-duration: 0.4s;
+
+            &:hover{
+                background-color: rgb(210, 211, 226);
+                color: black;
+            }
+        }
+        
+
+        
+.about {
+            font-size: 24px;
+            margin-bottom: 5%;
+        }
+        
+.carouselContainer{
+            text-shadow: 4px 2px 5px rgba(0, 0, 0, 0.329);
+        }
+
