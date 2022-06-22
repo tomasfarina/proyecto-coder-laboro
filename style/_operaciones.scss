@@ -1,0 +1,12 @@
+/*MAPS*/
+
+$redes: (
+    twitter: #55aCee,
+    facebook: #3a5795,
+    instagram: #C25E,
+);
+@each $red, $color in $redes {
+    .btn--#{$red}{
+        background-color: $color;
+    }
+}
