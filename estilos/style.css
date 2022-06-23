@@ -84,7 +84,7 @@ li {
   top: 0;
   z-index: 10;
   width: 100%;
-  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.0509803922);
 }
 .header .logo {
   width: 45%;
