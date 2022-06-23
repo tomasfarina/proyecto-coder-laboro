@@ -22,7 +22,8 @@
             font-size: 19px;
             font-weight: 900;
             margin-bottom: 5%;
-            margin-top: 7%;
+            margin-top: 30%;
+            margin-left: 20%;
             text-align: center;
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.329);
 
@@ -78,9 +79,19 @@
 .about {
             font-size: 24px;
             margin-bottom: 5%;
+            margin-top: 10%;
         }
         
 .carouselContainer{
             text-shadow: 4px 2px 5px rgba(0, 0, 0, 0.329);
         }
 
+.logoLaboro{
+    align-self: center;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.textsContent{
+    margin-top: 20%;
+}
