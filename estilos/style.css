@@ -43,6 +43,29 @@ li {
   background-color: rgba(204, 34, 85, 0.9333333333);
 }
 
+/*EXTEND*/
+.redSocial, .redsocial--sample, .redsocial--social {
+  border: 3px solid aquamarine;
+  background-color: crimson;
+}
+
+.redsocial--social {
+  color: white;
+  border-radius: 10px;
+}
+
+.redsocial--sample {
+  font-size: large;
+  color: #3a5795;
+}
+
+/*MIXIN*/
+.my_mixin {
+  height: 60px;
+  width: 600px;
+  background-color: lightgoldenrodyellow;
+}
+
 /* GRIDS BASE INDEX */
 .contenedor {
   width: 90%;
@@ -64,11 +87,7 @@ li {
   box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.05);
 }
 .header .logo {
-  font-weight: bolder;
-  font-size: 25px;
-}
-.header .logo h2 {
-  font-weight: bolder;
+  width: 45%;
 }
 
 /* ÁREA PERSONALIZACIÓN CONTENIDO */
@@ -94,7 +113,8 @@ li {
   font-size: 19px;
   font-weight: 900;
   margin-bottom: 5%;
-  margin-top: 7%;
+  margin-top: 30%;
+  margin-left: 20%;
   text-align: center;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.329);
 }
@@ -142,10 +162,21 @@ li {
 .about {
   font-size: 24px;
   margin-bottom: 5%;
+  margin-top: 10%;
 }
 
 .carouselContainer {
   text-shadow: 4px 2px 5px rgba(0, 0, 0, 0.329);
+}
+
+.logoLaboro {
+  align-self: center;
+  margin-left: 10%;
+  margin-top: 10%;
+}
+
+.textsContent {
+  margin-top: 20%;
 }
 
 /* ÁREA PERSONALIZACIÓN SIDEBAR */
@@ -188,6 +219,7 @@ li {
   font-weight: 900;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.329);
   transition-duration: 0.7s;
+  margin-top: 20%;
 }
 .contenedor .widget-1 .contenedor .widgetTexts,
 .contenedor .widget-2 .contenedor .widgetTexts,
@@ -254,6 +286,27 @@ li {
   transition-duration: 0.4s;
 }
 .contenedor .footer footer nav ul li:hover {
+  background-color: rgb(210, 211, 226);
+  color: black;
+}
+
+.footerNav {
+  display: inline-block;
+  list-style-type: none;
+  font-size: 20px;
+  color: gray;
+  margin: 5%;
+  font-family: "Poppins", sans-serif;
+  font-size: 19px;
+  font-weight: 900;
+  border: 1px solid rgb(184, 200, 228);
+  padding: 8px;
+  border-radius: 15px;
+  display: flex;
+  text-align: center;
+  transition-duration: 0.4s;
+}
+.footerNav:hover {
   background-color: rgb(210, 211, 226);
   color: black;
 }
@@ -336,6 +389,10 @@ input[type=submit]:hover {
 
   .widgetIcons {
     width: 20%;
+  }
+
+  .logoLaboro {
+    width: 80%;
   }
 }
 /* Tablet */

@@ -10,3 +10,34 @@ $redes: (
         background-color: $color;
     }
 }
+
+/*EXTEND*/
+
+.redSocial{
+    border: 3px solid aquamarine;
+    background-color: crimson;
+}
+
+.redsocial--social{
+    @extend .redSocial;
+    color: white;
+    border-radius: 10px;
+}
+
+.redsocial--sample{
+    @extend .redSocial;
+    font-size: large;
+    color: #3a5795;
+}
+
+/*MIXIN*/
+
+@mixin sizes ($width, $height){
+    height: $height;
+    width: $width;
+}
+
+.my_mixin{
+    @include sizes (600px, 60px);
+    background-color: lightgoldenrodyellow;
+}
