@@ -30,42 +30,6 @@ li {
   list-style-type: none;
 }
 
-/*MAPS*/
-.btn--twitter {
-  background-color: #55aCee;
-}
-
-.btn--facebook {
-  background-color: #3a5795;
-}
-
-.btn--instagram {
-  background-color: rgba(204, 34, 85, 0.9333333333);
-}
-
-/*EXTEND*/
-.redSocial, .redsocial--sample, .redsocial--social {
-  border: 3px solid aquamarine;
-  background-color: crimson;
-}
-
-.redsocial--social {
-  color: white;
-  border-radius: 10px;
-}
-
-.redsocial--sample {
-  font-size: large;
-  color: #3a5795;
-}
-
-/*MIXIN*/
-.my_mixin {
-  height: 60px;
-  width: 600px;
-  background-color: lightgoldenrodyellow;
-}
-
 /* GRIDS BASE INDEX */
 .contenedor {
   width: 90%;
