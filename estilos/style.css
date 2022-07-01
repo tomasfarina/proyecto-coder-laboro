@@ -38,6 +38,10 @@ li {
   margin: 5px;
 }
 
+svg {
+  margin-right: 10px;
+}
+
 /* GRIDS BASE INDEX */
 .contenedor {
   width: 90%;
