@@ -66,27 +66,28 @@
     <div class="container">
         <form action="action_page.php">
       
-          <label class="formsLabels" for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
-      
-          <label class="formsLabels" for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
+          <label class="formsLabels" for="fname">Full Name</label>
+          <input type="text" id="fname" name="fullname" placeholder="Your name.."> 
+    
           <label class="formsLabels" for="email">Email</label>
           <input type="text" id="email" name="email" placeholder="Your email..">
       
-          <label  class="formsLabels" for="country">Country</label>
-          <select id="country" name="country">
-            <option value="argentina">Argentina</option>
-            <option value="chile">Chile</option>
-            <option value="brasil">Brasil</option>
-            <option value="uruguay">Uruguay</option>
-            <option value="paraguay">Paraguay</option>
-            <option value="olivia">Bolivia</option>
+          <label  class="formsLabels" for="country">Issue</label>
+          <select id="issue" name="issue">
+            <option value="argentina">Bugs</option>
+            <option value="chile">I want to know more</option>
+            <option value="brasil">Jobs</option>
+            <option value="uruguay">Support</option>
+            <option value="paraguay">Other</option>
           </select>
       
           <label class="formsLabels" for="subject">Subject</label>
           <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+          <div class="mb-3">
+            <label for="formFileMultiple" class="form-label">Need to explain further? Help us with a picture</label>
+            <input class="form-control" type="file" id="formFileMultiple" multiple>
+          </div>
       
           <input type="submit" value="Submit">
       
